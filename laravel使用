@@ -14,4 +14,11 @@
   .env中存放数据库、redis的配置文件，如果用php artisan:serve启动的项目，修改完以后需要清除缓存
   php artisan config:clear   php artisan cache:clear
   
-  4
+  4、数据库的操作
+    1）增加操作insert,insertGetId,insert可以添加一条和多条记录，返回布尔值；insertGetId只能添加一条数据，返回自增的id
+    2）更新操作update\increment\decrement,update返回受影响条数；increment自增decrement自减，针对数字类型的字段，默认操作1，可自定义
+    3）查询操作get(),first(),find()//返回的是对象,value('某个字段的值'),pluck('某一列的值'),chunk('分块处理'),count(总数),max(最大值),min(最小值),avg(平均数),sum(求和)
+    相关参数where(条件)->orWhere(或查询)->distinct(去重)->orderBy(排序)->groupBy('分组')->limit(数量)->offset(起始位置)->having(二次排序)->select(指定字段值)->toArray(转数组)
+    4)删除delete返回受影响条数,truncate删库跑路
+    5）DB::statement()//增删改原生语句
+    6）DB::select()//查询原生语句，返回的是数组
