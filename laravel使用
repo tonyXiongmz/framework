@@ -22,3 +22,5 @@
     4)删除delete返回受影响条数,truncate删库跑路
     5）DB::statement()//增删改原生语句
     6）DB::select()//查询原生语句，返回的是数组
+    7）DB::table(完整表名)
+    8)DB::name(去前缀表名)
