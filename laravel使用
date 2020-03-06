@@ -25,3 +25,4 @@
     7）DB::table(完整表名)
     8)DB::name(去前缀表名)
 5、视图操作 return views('文件名',[]); return views('文件名',compact(根据变量名自动生成数组))
+6、csrf攻击，视图中加入csrf_token的隐藏域根据表单一同提交，csrf_field会生成整个隐藏域，异步提交时只能使用csrf_token
