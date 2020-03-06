@@ -6,3 +6,12 @@
   Input->post()//表单提交
   Input->only([])//指定值
   Input->excep([])//例外值
+ 
+ 2、常量的使用
+  DB,APP,INPUT，常用的类为了减少调用路径的显示，在config/app.php alisaes中定义一个公共常量
+  
+  3、配置文件
+  .env中存放数据库、redis的配置文件，如果用php artisan:serve启动的项目，修改完以后需要清除缓存
+  php artisan config:clear   php artisan cache:clear
+  
+  4
