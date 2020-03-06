@@ -24,3 +24,4 @@
     6）DB::select()//查询原生语句，返回的是数组
     7）DB::table(完整表名)
     8)DB::name(去前缀表名)
+5、视图操作 return views('文件名',[]); return views('文件名',compact(根据变量名自动生成数组))
