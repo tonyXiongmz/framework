@@ -1,0 +1,8 @@
+1、数据的获取，Request,facde/input可以
+  Request->input()//全部
+  Request->input('name')//单个值
+  Input->all()//全部
+  Input->get()//get方式
+  Input->post()//表单提交
+  Input->only([])//指定值
+  Input->excep([])//例外值
