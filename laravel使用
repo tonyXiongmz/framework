@@ -26,3 +26,8 @@
     8)DB::name(去前缀表名)
 5、视图操作 return views('文件名',[]); return views('文件名',compact(根据变量名自动生成数组))
 6、csrf攻击，视图中加入csrf_token的隐藏域根据表单一同提交，csrf_field会生成整个隐藏域，异步提交时只能使用csrf_token;例外路由在\app\Http\Middleware\verifyCsrfToken中添加例外
+7、Model的使用；
+  1）(必选)定义一个$table属性，不需要加前缀的表名，如果不加会默认去查找带复数的表名,protected；
+  2）（可选）定义一个$primarykey的属性，如果主键不为ID的情况下需要定义,protected；
+  3）（可选）定义$timestamp属性为false,默认为true,如果表中没有create_at和update_at字段的话一定要设置为false,public.
+  4)（可选）定义$fillable属性，表示允许插入到数据库的字段信息，protected
