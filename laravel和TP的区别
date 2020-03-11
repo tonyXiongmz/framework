@@ -1,3 +1,4 @@
 1、laravel 可以用php artisan serve启动并且修改配置文件需要清除缓存，并在命令行中可以创建model,controller,中间件等
 2、laravel可以用迁移文件创建数据表，可以用填充器填充数据表数据
-3、路由方式不一样。
+3、路由配置方式不一样。
+4、laravel基础配置文件在根目录下的.env文件中
